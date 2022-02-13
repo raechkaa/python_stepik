@@ -1,0 +1,64 @@
+# 1 task
+
+X = int(input())
+Y = int(input())
+print(X*60 + Y)
+
+# 2 task
+
+a = int(input())
+x = a // 60
+t = a % 60
+print(x)
+print(t)
+
+# 3 task
+
+x = int(input())
+h = int(input())
+m = int(input())
+a = h*60 + m + x
+print(a // 60)
+print(a % 60)
+
+# 4 task
+
+a = int(input())
+b = int(input())
+h = int(input())
+if h>=a and h<=b:
+    print('Это нормально')
+elif h < a:
+    print('Недосып')
+else:
+    print('Пересып')
+
+# 5 task
+
+a = int(input())
+if (a % 4 == 0 and a % 100 != 0) or (a % 400 == 0):
+    print('Високосный')
+else:
+    print('Обычный')
+
+# 6 task
+
+a = int(input())
+b = int(input())
+c = int(input())
+p = (a+b+c) / 2
+s = (p*(p-a)*(p-b)*(p-c)) ** (1/2)
+print(s)
+
+# 7 task
+
+a = int(input())
+if (a > -15 and a <= 12):
+    print('True')
+elif (a>14 and a<17):
+    print('True')
+elif a>= 19:
+    print('True')
+else:
+    print('False')
+

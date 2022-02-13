@@ -1,0 +1,163 @@
+# 1 task
+
+first = float(input())
+second =  float(input())
+s = str(input())
+if s == "/":
+    if second != 0:
+        print(first / second)
+    else:
+        print('Деление на 0!')
+elif s == "+":
+    print(first + second)
+elif s == "-":
+    print(first - second)
+elif s == "*":
+    print(first * second)
+elif s == "pow":
+    print(first**second)
+elif s == "div":
+    if second != 0:
+        print(first // second)
+    else:
+        print('Деление на 0!')
+elif s == "mod":
+    if second != 0:
+        print(first % second)
+    else:
+        print('Деление на 0!')
+
+# 2 task
+
+f = str(input())
+if f == "круг":
+    r = int(input())
+    pi = 3.14
+    s1 = pi*(r**2)
+    print(s1)
+elif f == "прямоугольник":
+    a = int(input())
+    b = int(input())
+    s2 = a*b
+    print(s2)
+elif f == "треугольник":
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    p = (a+b+c)/2
+    s3 = (p*(p-a)*(p-b)*(p-c))**(1/2)
+    print(s3)
+
+# 3 task
+
+a = int(input())
+b = int(input())
+c = int(input())
+if a>b and a>c:
+  max = a
+  if b>c:
+    mid=b
+    min=c
+  else:
+    mid=c
+    min=b
+  print(max)
+  print(min)
+  print(mid)
+elif b>a and b>c:
+  max=b
+  if a>c:
+    mid=a
+    min=c
+  else:
+    mid=c
+    min=a
+  print(max)
+  print(min)
+  print(mid)
+elif c>a and c>b:
+  max=c
+  if a>b:
+    mid=a
+    min=b
+  else:
+    mid=b
+    min=a
+  print(max)
+  print(min)
+  print(mid)
+elif c==a and b==c:
+  max=a
+  min=b
+  mid=c
+  print(max)
+  print(min)
+  print(mid) 
+elif c==a and (b>a or b>c):
+  max=b
+  min=c
+  mid=a
+  print(max)
+  print(min)
+  print(mid) 
+elif c==a and (b<a or b<c):
+  max=a
+  min=b
+  mid=c
+  print(max)
+  print(min)
+  print(mid) 
+elif a==b and (c<b or c<a):
+  max=a
+  min=c
+  mid=b
+  print(max)
+  print(min)
+  print(mid) 
+elif a==b and (c>b or c>a):
+  max=a
+  min=b
+  mid=c
+  print(max)
+  print(min)
+  print(mid) 
+elif c==b and (a>c or a>b):
+  max=a
+  min=c
+  mid=b
+  print(max)
+  print(min)
+  print(mid) 
+elif c==b and (a<c or a<b):
+  max=c
+  min=a
+  mid=b
+  print(max)
+  print(min)
+  print(mid)
+
+# 4 task
+
+tp = int(input())
+if tp % 10 == 1 and tp % 100 != 11: # Формула 1
+    print(tp, 'программист')
+elif tp % 10 >= 2 and tp % 10 <= 4 and (tp % 100 < 10 or tp % 100 > 20): # Формула 2
+    print(tp, 'программиста')
+else:
+    print(tp, 'программистов')
+
+# 5 task
+
+n = input()
+n1 = n[0]
+n2 = n[1]
+n3 = n[2]
+
+n4 = n[3]
+n5 = n[4]
+n6 = n[5]
+
+if int(n1) + int(n2) + int(n3) == int(n4) + int(n5) + int(n6):
+    print('Счастливый')
+else:
+    print('Обычный')

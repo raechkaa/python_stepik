@@ -1,0 +1,80 @@
+# 1 task
+
+s = input()
+x = s.upper()
+count = 0
+res = 0
+for i in s:
+    a = x.count('C')
+    b = x.count('G')
+res = (a+b)/len(s)*100
+print(res)
+
+# 2 task 
+
+s = str(input())
+l = len(s)-1
+c = 1
+t = ''
+if len(s)==1:
+    t = t +s+str(c)
+else:
+    for i in range(0,l):
+        if s[i]==s[i+1]:
+            c +=1
+        elif s[i]!=s[i+1]:
+            t = t + s[i]+str(c)
+            c = 1
+    for j in range(l,l+1):
+        if s[-1]==s[-2]:
+            t = t +s[j]+str(c)
+        elif s[-1]!=s[-2]:
+            t = t +s[j]+str(c)
+            c = 1
+print(t)
+
+# 3 task 
+
+s = input().split()
+sum = 0
+for i in range (len(s)):
+    s[i] = int(s[i])
+    sum += s[i]
+print(sum)
+
+# 4 task 
+
+s = input().split()
+res = []
+for i in range(len(s)):
+    s[i] = int(s[i])
+for j in range(len(s)):
+    if len(s) == 1:
+        print(s[j])
+    else:
+        if j != 0:
+            if j == len(s)-1:
+                res.append(str(s[0] + s[j - 1]))
+            else:
+                res.append(str(s[j - 1] + s[j + 1]))
+        elif j == 0:
+            res.append(str(s[j + 1] + s[len(s) - 1]))
+print(*res)
+
+# 5 task
+
+s = input().split()
+s.sort()
+n = 0
+res = []
+for i in range(len(s)):
+    s[i] = int(s[i])
+for i in range(len(s)):
+    if i!=len(s)-1:
+        if s[i] == s[i + 1]:
+            n+=1
+            if n==1:
+                res.append(str(s[i]))
+        else:
+            n=0
+print(*res)

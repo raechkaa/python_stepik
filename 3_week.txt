@@ -1,0 +1,58 @@
+# 1 task
+
+s = 0
+n = int(input())
+s += n
+while n!= 0:
+    n = int(input())
+    s += n
+print(s)
+
+# 2 task
+
+a = int(input())
+b = int(input())
+d = 0
+d +=1
+while d % a!= 0 or d % b != 0:
+    d += 1
+    if d % a == 0 and d % b == 0:
+        d = d
+print(d)
+
+
+# 3 task
+
+while True:
+    a = int(input())
+    if a < 10:
+        continue
+    elif a > 100:
+        break
+    else:
+        print(a)
+
+# 4 task
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+for j in range(c, d+1):
+    print( '\t' ,j, end ='\t')
+for i in range (a, b+1):
+    print('\n',i, end = '\t')
+    for k in range(c, d + 1):
+        print(k*i, end='\t')
+
+# 5 task
+
+a = int(input())
+b = int(input())
+s = 0
+n = 0
+for i in range(a, b+1):
+    if i % 3 == 0:
+        s += i
+        n +=1
+print(s/n)

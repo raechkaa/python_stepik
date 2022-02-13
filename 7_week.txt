@@ -1,0 +1,31 @@
+# 1 task 
+
+def update_dictionary(d, key, value):
+    if key in d:
+        d[key].append(value)        
+    else:
+        if 2*key in d:
+            d[2*key].append(value)
+        else:
+            d[2*key] = []
+            d[2*key].append(value)
+
+# 2 task
+
+import math
+
+a = input()
+b = 2*math.pi*float(a)
+print(float(b))
+
+# 3 task
+
+dict = {}
+for i in range(int(input())):
+    a = int(input())
+    if a not in dict:
+        dict[a] = f(a)
+    print(dict[a])
+
+
+
